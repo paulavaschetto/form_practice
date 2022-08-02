@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <form class="form-sect" method="get" action="result.html">
+    <form name="myForm" class="form-sect" method="post" action="result.html" onsubmit="return validateForm()">
         <div class="inputGroup">
             <label for="firstName">First name</label>
             <input type="text" name="firstName" id="firstName" required minlength="2" maxlength="20">
@@ -33,6 +33,6 @@
             <button type="submit" class="primary-btn">SUBMIT</button>
         </div>
     </form>  
-   
+   <script src="/form_practice/index.js"></script>
 </body>
 </html>
