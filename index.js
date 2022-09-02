@@ -19,6 +19,10 @@ $(function() {
       phonenumber: {
         required: true,
         minlength: 10
+      },
+      url:{
+        required: true,
+        url: true
       }
     },
     // Specify validation error messages
@@ -29,7 +33,9 @@ $(function() {
         required: "Please provide your phone number",
         minlength: "Please enter a valid phone number"
       },
-      email: "Please enter a valid email address"
+      email: "Please enter a valid email address",
+      url: "Please enter a valid URL"
+
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
